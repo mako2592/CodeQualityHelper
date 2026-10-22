@@ -52,10 +52,10 @@ export function FileTable({ files, thresholds }: FileTableProps) {
                       {file.path}
                     </button>
                   </th>
-                  <td className="num">{file.counts.total}</td>
-                  <td className="num">{file.counts.byStatus.Survived ?? 0}</td>
-                  <td className="num">{file.counts.byStatus.NoCoverage ?? 0}</td>
-                  <td className="num">
+                  <td className="num count" data-label="Mutanty">{file.counts.total}</td>
+                  <td className="num count" data-label="Survived">{file.counts.byStatus.Survived ?? 0}</td>
+                  <td className="num count" data-label="NoCoverage">{file.counts.byStatus.NoCoverage ?? 0}</td>
+                  <td className="num score-cell">
                     <ScoreBadge score={file.mutationScore} thresholds={thresholds} />
                   </td>
                 </tr>

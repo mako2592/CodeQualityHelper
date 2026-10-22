@@ -1,0 +1,16 @@
+{
+  "name": "stryker-sample-project",
+  "version": "1.0.0",
+  "description": "Mały projekt do wygenerowania przykładowego raportu Strykera",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "mutation": "stryker run && node scripts/sanitize-report.mjs"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^10.0.0",
+    "@stryker-mutator/vitest-runner": "^10.0.0",
+    "vitest": "^4.1.12"
+  }
+}

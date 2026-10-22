@@ -5,5 +5,7 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'node',
+    // Bez tego Vitest zebrałby też testy z examples/sample-project.
+    include: ['src/**/*.test.ts'],
   },
 });

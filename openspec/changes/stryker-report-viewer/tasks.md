@@ -22,7 +22,7 @@
 - [x] 4.1 Zaimplementować `FileDrop` (drag&drop oraz `<input type="file" accept=".json">`, odczyt przez `file.text()`, pierwszy plik przy kilku upuszczonych) i stan `idle | error | loaded` w `App`, z komunikatami dla `invalid-json`, `not-a-report` i raportu bez mutantów. Weryfikacja ręczna w `npm run dev`: niepoprawny JSON i JSON bez `files` pokazują właściwy komunikat, a ponowne wczytanie poprawnego pliku usuwa go.
 - [x] 4.2 Zaimplementować `Summary`: score z oceną (kolor i tekst), wartości progów, score dla pokrytego kodu, łączna liczba mutantów i liczniki statusów. Weryfikacja ręczna na poprawnym fixture: wartości zgadzają się z wynikami testów z grupy 3.
 - [x] 4.3 Zaimplementować `FileTable` i `SurvivorList`: kolumny ścieżka, mutanty, Survived, NoCoverage, score z oceną. Wiersz rozwija się i zwija kliknięciem, pokazując `linia:kolumna`, mutator, status i `replacement` (jeśli jest) albo informację o braku przeżywających mutantów. Stan rozwinięcia resetuje się przy nowym raporcie. Weryfikacja ręczna: najsłabszy plik jest na górze, a rozwinięcie pokazuje poprawne mutanty.
-- [ ] 4.4 Dodać style w `src/App.css`: zmienne kolorów na `:root`, tryb ciemny przez `prefers-color-scheme`, czytelny układ do szerokości telefonu. Weryfikacja ręczna w jasnym i ciemnym motywie systemu.
+- [x] 4.4 Dodać style w `src/App.css`: zmienne kolorów na `:root`, tryb ciemny przez `prefers-color-scheme`, czytelny układ do szerokości telefonu. Weryfikacja ręczna w jasnym i ciemnym motywie systemu.
 
 ## 5. Weryfikacja końcowa
 

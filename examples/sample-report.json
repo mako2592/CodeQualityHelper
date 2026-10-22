@@ -1,0 +1,3188 @@
+{
+  "files": {
+    "src/discount.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "67",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 19
+            },
+            "start": {
+              "column": 34,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "55",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be true // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 11
+            },
+            "start": {
+              "column": 52,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "56",
+          "mutatorName": "MethodExpression",
+          "replacement": "code.trim().toLowerCase()",
+          "statusReason": "expected false to be true // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 53,
+              "line": 10
+            },
+            "start": {
+              "column": 28,
+              "line": 10
+            }
+          }
+        },
+        {
+          "id": "57",
+          "mutatorName": "MethodExpression",
+          "replacement": "code",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 1,
+          "coveredBy": [
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 10
+            },
+            "start": {
+              "column": 28,
+              "line": 10
+            }
+          }
+        },
+        {
+          "id": "58",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be 80 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "10"
+          ],
+          "coveredBy": [
+            "10",
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 24
+            },
+            "start": {
+              "column": 75,
+              "line": 13
+            }
+          }
+        },
+        {
+          "id": "59",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "discount",
+          "statusReason": "Cannot read properties of undefined (reading 'minTotal')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "10"
+          ],
+          "coveredBy": [
+            "10",
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 14
+            },
+            "start": {
+              "column": 7,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "61",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "Cannot read properties of undefined (reading 'minTotal')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "10"
+          ],
+          "coveredBy": [
+            "10",
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 14
+            },
+            "start": {
+              "column": 7,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "60",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected 80 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "10",
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 14
+            },
+            "start": {
+              "column": 7,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "63",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected 80 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 7,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "62",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Cannot read properties of undefined (reading 'minTotal')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "10"
+          ],
+          "coveredBy": [
+            "10",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 16
+            },
+            "start": {
+              "column": 18,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "65",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total <= discount.minTotal",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 7,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "66",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total >= discount.minTotal",
+          "statusReason": "expected 80 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 7,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "64",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 7,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "68",
+          "mutatorName": "MethodExpression",
+          "replacement": "Math.max(Math.max(discount.percent, 0), 100)",
+          "statusReason": "expected +0 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 63,
+              "line": 21
+            },
+            "start": {
+              "column": 19,
+              "line": 21
+            }
+          }
+        },
+        {
+          "id": "69",
+          "mutatorName": "MethodExpression",
+          "replacement": "Math.min(discount.percent, 0)",
+          "statusReason": "expected 80 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 57,
+              "line": 21
+            },
+            "start": {
+              "column": 28,
+              "line": 21
+            }
+          }
+        },
+        {
+          "id": "71",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "1 + percent / 100",
+          "statusReason": "expected 88 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 48,
+              "line": 22
+            },
+            "start": {
+              "column": 31,
+              "line": 22
+            }
+          }
+        },
+        {
+          "id": "70",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "total / (1 - percent / 100)",
+          "statusReason": "expected 88.89 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 49,
+              "line": 22
+            },
+            "start": {
+              "column": 22,
+              "line": 22
+            }
+          }
+        },
+        {
+          "id": "72",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "percent * 100",
+          "statusReason": "expected -79920 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 48,
+              "line": 22
+            },
+            "start": {
+              "column": 35,
+              "line": 22
+            }
+          }
+        },
+        {
+          "id": "73",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "Math.round(discounted * 100) * 100",
+          "statusReason": "expected 720000 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 44,
+              "line": 23
+            },
+            "start": {
+              "column": 10,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "74",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "discounted / 100",
+          "statusReason": "expected 0.01 to be 72 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11",
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 37,
+              "line": 23
+            },
+            "start": {
+              "column": 21,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "75",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be { code: 'SAVE20', percent: 20, …(1) } // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "13"
+          ],
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 34
+            },
+            "start": {
+              "column": 90,
+              "line": 26
+            }
+          }
+        },
+        {
+          "id": "76",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be { code: 'SAVE20', percent: 20, …(1) } // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "13"
+          ],
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 32
+            },
+            "start": {
+              "column": 37,
+              "line": 28
+            }
+          }
+        },
+        {
+          "id": "77",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 1,
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 68,
+              "line": 29
+            },
+            "start": {
+              "column": 9,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "79",
+          "mutatorName": "EqualityOperator",
+          "replacement": "applyDiscount(total, discount) <= applyDiscount(total, best)",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 1,
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 68,
+              "line": 29
+            },
+            "start": {
+              "column": 9,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "78",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected undefined to be { code: 'SAVE20', percent: 20, …(1) } // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "13"
+          ],
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 68,
+              "line": 29
+            },
+            "start": {
+              "column": 9,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "80",
+          "mutatorName": "EqualityOperator",
+          "replacement": "applyDiscount(total, discount) >= applyDiscount(total, best)",
+          "statusReason": "expected undefined to be { code: 'SAVE20', percent: 20, …(1) } // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "13"
+          ],
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 68,
+              "line": 29
+            },
+            "start": {
+              "column": 9,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "81",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be { code: 'SAVE20', percent: 20, …(1) } // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "13"
+          ],
+          "coveredBy": [
+            "13"
+          ],
+          "location": {
+            "end": {
+              "column": 6,
+              "line": 31
+            },
+            "start": {
+              "column": 70,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "51",
+          "mutatorName": "Regex",
+          "replacement": "/[A-Z0-9]{4,12}$/",
+          "status": "Survived",
+          "static": true,
+          "testsCompleted": 4,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 40,
+              "line": 7
+            },
+            "start": {
+              "column": 22,
+              "line": 7
+            }
+          }
+        },
+        {
+          "id": "53",
+          "mutatorName": "Regex",
+          "replacement": "/^[A-Z0-9]$/",
+          "statusReason": "expected false to be true // Object.is equality",
+          "status": "Killed",
+          "static": true,
+          "testsCompleted": 3,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 40,
+              "line": 7
+            },
+            "start": {
+              "column": 22,
+              "line": 7
+            }
+          }
+        },
+        {
+          "id": "52",
+          "mutatorName": "Regex",
+          "replacement": "/^[A-Z0-9]{4,12}/",
+          "status": "Survived",
+          "static": true,
+          "testsCompleted": 4,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 40,
+              "line": 7
+            },
+            "start": {
+              "column": 22,
+              "line": 7
+            }
+          }
+        },
+        {
+          "id": "54",
+          "mutatorName": "Regex",
+          "replacement": "/^[^A-Z0-9]{4,12}$/",
+          "statusReason": "expected false to be true // Object.is equality",
+          "status": "Killed",
+          "static": true,
+          "testsCompleted": 3,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 40,
+              "line": 7
+            },
+            "start": {
+              "column": 22,
+              "line": 7
+            }
+          }
+        }
+      ],
+      "source": "export interface Discount {\n  code: string;\n  percent: number;\n  minTotal: number;\n}\n\nconst CODE_PATTERN = /^[A-Z0-9]{4,12}$/;\n\nexport function isValidCode(code: string): boolean {\n  return CODE_PATTERN.test(code.trim().toUpperCase());\n}\n\nexport function applyDiscount(total: number, discount?: Discount): number {\n  if (!discount) {\n    return total;\n  }\n  if (total < discount.minTotal) {\n    return total;\n  }\n\n  const percent = Math.min(Math.max(discount.percent, 0), 100);\n  const discounted = total * (1 - percent / 100);\n  return Math.round(discounted * 100) / 100;\n}\n\nexport function bestDiscount(total: number, discounts: Discount[]): Discount | undefined {\n  let best: Discount | undefined;\n  for (const discount of discounts) {\n    if (applyDiscount(total, discount) < applyDiscount(total, best)) {\n      best = discount;\n    }\n  }\n  return best;\n}\n"
+    },
+    "src/shipping.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "102",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 70,
+              "line": 5
+            },
+            "start": {
+              "column": 44,
+              "line": 5
+            }
+          }
+        },
+        {
+          "id": "103",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 78,
+              "line": 8
+            },
+            "start": {
+              "column": 73,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "104",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 14
+            },
+            "start": {
+              "column": 88,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "105",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 7,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "106",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 7,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "107",
+          "mutatorName": "LogicalOperator",
+          "replacement": "country === 'PL' || total >= FREE_SHIPPING_FROM",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 7,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "108",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 9
+            },
+            "start": {
+              "column": 7,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "109",
+          "mutatorName": "EqualityOperator",
+          "replacement": "country !== 'PL'",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 9
+            },
+            "start": {
+              "column": 7,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "110",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 9
+            },
+            "start": {
+              "column": 19,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "111",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 27,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "112",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total > FREE_SHIPPING_FROM",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 27,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "113",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total < FREE_SHIPPING_FROM",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 54,
+              "line": 9
+            },
+            "start": {
+              "column": 27,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "114",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 11
+            },
+            "start": {
+              "column": 56,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "115",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "base / 2",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 28,
+              "line": 13
+            },
+            "start": {
+              "column": 20,
+              "line": 13
+            }
+          }
+        },
+        {
+          "id": "116",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 64,
+              "line": 16
+            },
+            "start": {
+              "column": 59,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "117",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 19
+            },
+            "start": {
+              "column": 74,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "118",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 16,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "119",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 16,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "120",
+          "mutatorName": "EqualityOperator",
+          "replacement": "country !== 'PL'",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 16,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "121",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 17
+            },
+            "start": {
+              "column": 28,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "122",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 55,
+              "line": 17
+            },
+            "start": {
+              "column": 39,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "123",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 55,
+              "line": 17
+            },
+            "start": {
+              "column": 39,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "124",
+          "mutatorName": "EqualityOperator",
+          "replacement": "country !== 'DE'",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 55,
+              "line": 17
+            },
+            "start": {
+              "column": 39,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "125",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 55,
+              "line": 17
+            },
+            "start": {
+              "column": 51,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "126",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "days * 2",
+          "status": "NoCoverage",
+          "static": false,
+          "coveredBy": [],
+          "location": {
+            "end": {
+              "column": 38,
+              "line": 18
+            },
+            "start": {
+              "column": 30,
+              "line": 18
+            }
+          }
+        }
+      ],
+      "source": "// Moduł celowo bez testów: jego mutanty mają w raporcie status NoCoverage.\n\nexport type Country = 'PL' | 'DE' | 'US';\n\nconst BASE_COST: Record<Country, number> = { PL: 12, DE: 25, US: 60 };\nconst FREE_SHIPPING_FROM = 200;\n\nexport function shippingCost(total: number, country: Country, express = false): number {\n  if (country === 'PL' && total >= FREE_SHIPPING_FROM) {\n    return 0;\n  }\n  const base = BASE_COST[country];\n  return express ? base * 2 : base;\n}\n\nexport function estimatedDays(country: Country, express = false): number {\n  const days = country === 'PL' ? 2 : country === 'DE' ? 4 : 10;\n  return express ? Math.ceil(days / 2) : days;\n}\n"
+    },
+    "src/legacy.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "82",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 5
+            },
+            "start": {
+              "column": 52,
+              "line": 3
+            }
+          }
+        },
+        {
+          "id": "83",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 38,
+              "line": 4
+            },
+            "start": {
+              "column": 35,
+              "line": 4
+            }
+          }
+        },
+        {
+          "id": "84",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 43,
+              "line": 4
+            },
+            "start": {
+              "column": 40,
+              "line": 4
+            }
+          }
+        },
+        {
+          "id": "85",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 52,
+              "line": 4
+            },
+            "start": {
+              "column": 47,
+              "line": 4
+            }
+          }
+        },
+        {
+          "id": "86",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 9
+            },
+            "start": {
+              "column": 50,
+              "line": 7
+            }
+          }
+        },
+        {
+          "id": "87",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 22,
+              "line": 8
+            },
+            "start": {
+              "column": 10,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "88",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 22,
+              "line": 8
+            },
+            "start": {
+              "column": 10,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "89",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total >= 1000",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 22,
+              "line": 8
+            },
+            "start": {
+              "column": 10,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "90",
+          "mutatorName": "EqualityOperator",
+          "replacement": "total <= 1000",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 22,
+              "line": 8
+            },
+            "start": {
+              "column": 10,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "91",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "total / 0.23",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 37,
+              "line": 8
+            },
+            "start": {
+              "column": 25,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "92",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "total / 0.08",
+          "statusReason": "stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).",
+          "status": "Ignored",
+          "static": false,
+          "location": {
+            "end": {
+              "column": 52,
+              "line": 8
+            },
+            "start": {
+              "column": 40,
+              "line": 8
+            }
+          }
+        }
+      ],
+      "source": "// Stryker disable all: stary kod wyłączony z testów mutacyjnych (w raporcie: Ignored).\n\nexport function formatPrice(value: number): string {\n  return value.toFixed(2).replace('.', ',') + ' zł';\n}\n\nexport function legacyTax(total: number): number {\n  return total > 1000 ? total * 0.23 : total * 0.08;\n}\n"
+    },
+    "src/cart.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "1",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected undefined to deeply equal []",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 12
+            },
+            "start": {
+              "column": 10,
+              "line": 12
+            }
+          }
+        },
+        {
+          "id": "0",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Cannot read properties of undefined (reading 'items')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 13
+            },
+            "start": {
+              "column": 36,
+              "line": 11
+            }
+          }
+        },
+        {
+          "id": "2",
+          "mutatorName": "ArrayDeclaration",
+          "replacement": "[\"Stryker was here\"]",
+          "statusReason": "expected [ 'Stryker was here' ] to deeply equal []",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 21,
+              "line": 12
+            },
+            "start": {
+              "column": 19,
+              "line": 12
+            }
+          }
+        },
+        {
+          "id": "3",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Cannot read properties of undefined (reading 'items')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 32
+            },
+            "start": {
+              "column": 85,
+              "line": 15
+            }
+          }
+        },
+        {
+          "id": "4",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "Quantity must be positive",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 20,
+              "line": 16
+            },
+            "start": {
+              "column": 7,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "5",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [Function] to throw an error",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 20,
+              "line": 16
+            },
+            "start": {
+              "column": 7,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "6",
+          "mutatorName": "EqualityOperator",
+          "replacement": "quantity < 0",
+          "statusReason": "expected [Function] to throw an error",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 20,
+              "line": 16
+            },
+            "start": {
+              "column": 7,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "7",
+          "mutatorName": "EqualityOperator",
+          "replacement": "quantity > 0",
+          "statusReason": "Quantity must be positive",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 20,
+              "line": 16
+            },
+            "start": {
+              "column": 7,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "8",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected [Function] to throw an error",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 18
+            },
+            "start": {
+              "column": 22,
+              "line": 16
+            }
+          }
+        },
+        {
+          "id": "10",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "expected [Function] to throw error including 'Quantity must be positive' but got ''",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 48,
+              "line": 17
+            },
+            "start": {
+              "column": 21,
+              "line": 17
+            }
+          }
+        },
+        {
+          "id": "11",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "Price cannot be negative",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 19
+            },
+            "start": {
+              "column": 7,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "12",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [Function] to throw an error",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "5"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 19
+            },
+            "start": {
+              "column": 7,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "13",
+          "mutatorName": "EqualityOperator",
+          "replacement": "price <= 0",
+          "statusReason": "Price cannot be negative",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "5"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 19
+            },
+            "start": {
+              "column": 7,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "14",
+          "mutatorName": "EqualityOperator",
+          "replacement": "price >= 0",
+          "statusReason": "Price cannot be negative",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 16,
+              "line": 19
+            },
+            "start": {
+              "column": 7,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "15",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected [Function] to throw an error",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "5"
+          ],
+          "coveredBy": [
+            "5"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 21
+            },
+            "start": {
+              "column": 18,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "17",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "expected [Function] to throw error including 'Price cannot be negative' but got ''",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "5"
+          ],
+          "coveredBy": [
+            "5"
+          ],
+          "location": {
+            "end": {
+              "column": 47,
+              "line": 20
+            },
+            "start": {
+              "column": 21,
+              "line": 20
+            }
+          }
+        },
+        {
+          "id": "18",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "expected [ …(3) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 23
+            },
+            "start": {
+              "column": 36,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "19",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected [ { sku: 'apple', price: 1.5, …(1) } ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 23
+            },
+            "start": {
+              "column": 46,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "20",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [ …(3) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 23
+            },
+            "start": {
+              "column": 46,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "21",
+          "mutatorName": "EqualityOperator",
+          "replacement": "item.sku !== sku",
+          "statusReason": "expected [ …(2) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 23
+            },
+            "start": {
+              "column": 46,
+              "line": 23
+            }
+          }
+        },
+        {
+          "id": "22",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected [] to deeply equal [ { sku: 'apple', price: 1.5, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 15,
+              "line": 24
+            },
+            "start": {
+              "column": 7,
+              "line": 24
+            }
+          }
+        },
+        {
+          "id": "23",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [ …(3) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 15,
+              "line": 24
+            },
+            "start": {
+              "column": 7,
+              "line": 24
+            }
+          }
+        },
+        {
+          "id": "24",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected [ …(3) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 30
+            },
+            "start": {
+              "column": 17,
+              "line": 24
+            }
+          }
+        },
+        {
+          "id": "25",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected undefined to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 6,
+              "line": 29
+            },
+            "start": {
+              "column": 12,
+              "line": 25
+            }
+          }
+        },
+        {
+          "id": "27",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected [ …(2) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 25,
+              "line": 27
+            },
+            "start": {
+              "column": 9,
+              "line": 27
+            }
+          }
+        },
+        {
+          "id": "28",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [ …(2) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 25,
+              "line": 27
+            },
+            "start": {
+              "column": 9,
+              "line": 27
+            }
+          }
+        },
+        {
+          "id": "26",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "expected [ undefined, undefined ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 27
+            },
+            "start": {
+              "column": 29,
+              "line": 26
+            }
+          }
+        },
+        {
+          "id": "30",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected [ {}, { sku: 'pear', price: 2, …(1) } ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 75,
+              "line": 27
+            },
+            "start": {
+              "column": 28,
+              "line": 27
+            }
+          }
+        },
+        {
+          "id": "29",
+          "mutatorName": "EqualityOperator",
+          "replacement": "item.sku !== sku",
+          "statusReason": "expected [ …(2) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 25,
+              "line": 27
+            },
+            "start": {
+              "column": 9,
+              "line": 27
+            }
+          }
+        },
+        {
+          "id": "31",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "item.quantity - quantity",
+          "statusReason": "expected [ …(2) ] to deeply equal [ …(2) ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2",
+            "3"
+          ],
+          "location": {
+            "end": {
+              "column": 73,
+              "line": 27
+            },
+            "start": {
+              "column": 49,
+              "line": 27
+            }
+          }
+        },
+        {
+          "id": "33",
+          "mutatorName": "ArrayDeclaration",
+          "replacement": "[]",
+          "statusReason": "expected [] to deeply equal [ { sku: 'apple', price: 1.5, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 60,
+              "line": 31
+            },
+            "start": {
+              "column": 19,
+              "line": 31
+            }
+          }
+        },
+        {
+          "id": "32",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected undefined to deeply equal [ { sku: 'apple', price: 1.5, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 31
+            },
+            "start": {
+              "column": 10,
+              "line": 31
+            }
+          }
+        },
+        {
+          "id": "34",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected [ {} ] to deeply equal [ { sku: 'apple', price: 1.5, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "1"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 59,
+              "line": 31
+            },
+            "start": {
+              "column": 35,
+              "line": 31
+            }
+          }
+        },
+        {
+          "id": "35",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Cannot read properties of undefined (reading 'items')",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 36
+            },
+            "start": {
+              "column": 59,
+              "line": 34
+            }
+          }
+        },
+        {
+          "id": "36",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected undefined to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 66,
+              "line": 35
+            },
+            "start": {
+              "column": 10,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "37",
+          "mutatorName": "MethodExpression",
+          "replacement": "cart.items",
+          "statusReason": "expected [ …(2) ] to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 64,
+              "line": 35
+            },
+            "start": {
+              "column": 19,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "38",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "expected [] to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 63,
+              "line": 35
+            },
+            "start": {
+              "column": 37,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "39",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected [ …(2) ] to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 63,
+              "line": 35
+            },
+            "start": {
+              "column": 47,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "40",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "expected [] to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 63,
+              "line": 35
+            },
+            "start": {
+              "column": 47,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "41",
+          "mutatorName": "EqualityOperator",
+          "replacement": "item.sku === sku",
+          "statusReason": "expected [ { sku: 'apple', price: 1.5, …(1) } ] to deeply equal [ { sku: 'pear', price: 2, …(1) } ]",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6"
+          ],
+          "location": {
+            "end": {
+              "column": 63,
+              "line": 35
+            },
+            "start": {
+              "column": 47,
+              "line": 35
+            }
+          }
+        },
+        {
+          "id": "42",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be +0 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 40
+            },
+            "start": {
+              "column": 47,
+              "line": 38
+            }
+          }
+        },
+        {
+          "id": "43",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "expected undefined to be 5 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 39
+            },
+            "start": {
+              "column": 28,
+              "line": 39
+            }
+          }
+        },
+        {
+          "id": "44",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "sum - item.quantity",
+          "statusReason": "expected -5 to be 5 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 62,
+              "line": 39
+            },
+            "start": {
+              "column": 43,
+              "line": 39
+            }
+          }
+        },
+        {
+          "id": "45",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be +0 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 45
+            },
+            "start": {
+              "column": 46,
+              "line": 42
+            }
+          }
+        },
+        {
+          "id": "46",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "expected NaN to be 4.8 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 43
+            },
+            "start": {
+              "column": 35,
+              "line": 43
+            }
+          }
+        },
+        {
+          "id": "47",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "sum - item.price * item.quantity",
+          "statusReason": "expected -4.8 to be 4.8 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 43
+            },
+            "start": {
+              "column": 50,
+              "line": 43
+            }
+          }
+        },
+        {
+          "id": "48",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "item.price / item.quantity",
+          "statusReason": "expected 1.16 to be 4.8 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 43
+            },
+            "start": {
+              "column": 56,
+              "line": 43
+            }
+          }
+        },
+        {
+          "id": "49",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "Math.round(total * 100) * 100",
+          "statusReason": "expected 48000 to be 4.8 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 44
+            },
+            "start": {
+              "column": 10,
+              "line": 44
+            }
+          }
+        },
+        {
+          "id": "50",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "total / 100",
+          "statusReason": "expected +0 to be 4.8 // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 32,
+              "line": 44
+            },
+            "start": {
+              "column": 21,
+              "line": 44
+            }
+          }
+        }
+      ],
+      "source": "export interface CartItem {\n  sku: string;\n  price: number;\n  quantity: number;\n}\n\nexport interface Cart {\n  items: CartItem[];\n}\n\nexport function createCart(): Cart {\n  return { items: [] };\n}\n\nexport function addItem(cart: Cart, sku: string, price: number, quantity = 1): Cart {\n  if (quantity <= 0) {\n    throw new Error('Quantity must be positive');\n  }\n  if (price < 0) {\n    throw new Error('Price cannot be negative');\n  }\n\n  const existing = cart.items.find((item) => item.sku === sku);\n  if (existing) {\n    return {\n      items: cart.items.map((item) =>\n        item.sku === sku ? { ...item, quantity: item.quantity + quantity } : item,\n      ),\n    };\n  }\n  return { items: [...cart.items, { sku, price, quantity }] };\n}\n\nexport function removeItem(cart: Cart, sku: string): Cart {\n  return { items: cart.items.filter((item) => item.sku !== sku) };\n}\n\nexport function itemCount(cart: Cart): number {\n  return cart.items.reduce((sum, item) => sum + item.quantity, 0);\n}\n\nexport function subtotal(cart: Cart): number {\n  const total = cart.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n  return Math.round(total * 100) / 100;\n}\n"
+    },
+    "src/retry.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "94",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 56,
+              "line": 5
+            },
+            "start": {
+              "column": 38,
+              "line": 5
+            }
+          }
+        },
+        {
+          "id": "93",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected undefined to be 'ok' // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "8"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 15
+            },
+            "start": {
+              "column": 63,
+              "line": 3
+            }
+          }
+        },
+        {
+          "id": "95",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "No attempts made",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "8"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 31,
+              "line": 6
+            },
+            "start": {
+              "column": 10,
+              "line": 6
+            }
+          }
+        },
+        {
+          "id": "96",
+          "mutatorName": "EqualityOperator",
+          "replacement": "attempt <= maxAttempts",
+          "statusReason": "expected [Function] to throw error including 'fail 3' but got 'fail 4'",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 31,
+              "line": 6
+            },
+            "start": {
+              "column": 10,
+              "line": 6
+            }
+          }
+        },
+        {
+          "id": "97",
+          "mutatorName": "EqualityOperator",
+          "replacement": "attempt >= maxAttempts",
+          "statusReason": "No attempts made",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "8"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 31,
+              "line": 6
+            },
+            "start": {
+              "column": 10,
+              "line": 6
+            }
+          }
+        },
+        {
+          "id": "98",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Hit limit reached (601/600)",
+          "status": "Timeout",
+          "static": false,
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 13
+            },
+            "start": {
+              "column": 33,
+              "line": 6
+            }
+          }
+        },
+        {
+          "id": "99",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "No attempts made",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "8"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 6,
+              "line": 9
+            },
+            "start": {
+              "column": 9,
+              "line": 7
+            }
+          }
+        },
+        {
+          "id": "100",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected [Function] to throw error including 'fail 3' but got 'No attempts made'",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 6,
+              "line": 11
+            },
+            "start": {
+              "column": 21,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "101",
+          "mutatorName": "UpdateOperator",
+          "replacement": "attempt--",
+          "statusReason": "Hit limit reached (501/500)",
+          "status": "Timeout",
+          "static": false,
+          "coveredBy": [
+            "8",
+            "9"
+          ],
+          "location": {
+            "end": {
+              "column": 14,
+              "line": 12
+            },
+            "start": {
+              "column": 5,
+              "line": 12
+            }
+          }
+        }
+      ],
+      "source": "// Pętla z licznikiem: mutacje warunku lub inkrementacji zapętlają kod,\n// co w raporcie daje status Timeout.\nexport function retry<T>(fn: () => T, maxAttempts: number): T {\n  let attempt = 0;\n  let lastError: unknown = new Error('No attempts made');\n  while (attempt < maxAttempts) {\n    try {\n      return fn();\n    } catch (error) {\n      lastError = error;\n    }\n    attempt++;\n  }\n  throw lastError;\n}\n"
+    }
+  },
+  "schemaVersion": "1.0",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "testFiles": {
+    "src/cart.test.ts": {
+      "tests": [
+        {
+          "id": "0",
+          "name": "cart starts empty"
+        },
+        {
+          "id": "1",
+          "name": "cart adds a new item with default quantity 1"
+        },
+        {
+          "id": "2",
+          "name": "cart increases quantity of an existing item and leaves others untouched"
+        },
+        {
+          "id": "3",
+          "name": "cart does not mutate the original cart"
+        },
+        {
+          "id": "4",
+          "name": "cart rejects non-positive quantity"
+        },
+        {
+          "id": "5",
+          "name": "cart rejects negative price but allows free items"
+        },
+        {
+          "id": "6",
+          "name": "cart removes an item by sku"
+        },
+        {
+          "id": "7",
+          "name": "cart counts items and computes rounded subtotal"
+        }
+      ],
+      "source": "import { describe, expect, it } from 'vitest';\nimport { addItem, createCart, itemCount, removeItem, subtotal } from './cart';\n\ndescribe('cart', () => {\n  it('starts empty', () => {\n    const cart = createCart();\n    expect(cart.items).toEqual([]);\n    expect(itemCount(cart)).toBe(0);\n    expect(subtotal(cart)).toBe(0);\n  });\n\n  it('adds a new item with default quantity 1', () => {\n    const cart = addItem(createCart(), 'apple', 1.5);\n    expect(cart.items).toEqual([{ sku: 'apple', price: 1.5, quantity: 1 }]);\n  });\n\n  it('increases quantity of an existing item and leaves others untouched', () => {\n    let cart = addItem(createCart(), 'apple', 1.5, 2);\n    cart = addItem(cart, 'pear', 2);\n    cart = addItem(cart, 'apple', 1.5, 3);\n    expect(cart.items).toEqual([\n      { sku: 'apple', price: 1.5, quantity: 5 },\n      { sku: 'pear', price: 2, quantity: 1 },\n    ]);\n  });\n\n  it('does not mutate the original cart', () => {\n    const cart = addItem(createCart(), 'apple', 1.5);\n    addItem(cart, 'apple', 1.5);\n    expect(cart.items[0].quantity).toBe(1);\n  });\n\n  it('rejects non-positive quantity', () => {\n    expect(() => addItem(createCart(), 'apple', 1, 0)).toThrow('Quantity must be positive');\n    expect(() => addItem(createCart(), 'apple', 1, -1)).toThrow('Quantity must be positive');\n  });\n\n  it('rejects negative price but allows free items', () => {\n    expect(() => addItem(createCart(), 'apple', -0.01)).toThrow('Price cannot be negative');\n    expect(addItem(createCart(), 'gift', 0).items).toHaveLength(1);\n  });\n\n  it('removes an item by sku', () => {\n    let cart = addItem(createCart(), 'apple', 1.5);\n    cart = addItem(cart, 'pear', 2);\n    expect(removeItem(cart, 'apple').items).toEqual([{ sku: 'pear', price: 2, quantity: 1 }]);\n  });\n\n  it('counts items and computes rounded subtotal', () => {\n    let cart = addItem(createCart(), 'apple', 0.1, 3);\n    cart = addItem(cart, 'pear', 2.25, 2);\n    expect(itemCount(cart)).toBe(5);\n    expect(subtotal(cart)).toBe(4.8);\n  });\n});\n"
+    },
+    "src/retry.test.ts": {
+      "tests": [
+        {
+          "id": "8",
+          "name": "retry returns the first successful result"
+        },
+        {
+          "id": "9",
+          "name": "retry throws the last error after all attempts fail"
+        }
+      ],
+      "source": "import { describe, expect, it } from 'vitest';\nimport { retry } from './retry';\n\ndescribe('retry', () => {\n  it('returns the first successful result', () => {\n    let calls = 0;\n    const result = retry(() => {\n      calls++;\n      if (calls < 3) throw new Error('flaky');\n      return 'ok';\n    }, 5);\n    expect(result).toBe('ok');\n    expect(calls).toBe(3);\n  });\n\n  it('throws the last error after all attempts fail', () => {\n    let calls = 0;\n    expect(() =>\n      retry(() => {\n        calls++;\n        throw new Error(`fail ${calls}`);\n      }, 3),\n    ).toThrow('fail 3');\n    expect(calls).toBe(3);\n  });\n});\n"
+    },
+    "src/discount.test.ts": {
+      "tests": [
+        {
+          "id": "10",
+          "name": "discount returns total without a discount"
+        },
+        {
+          "id": "11",
+          "name": "discount applies percentage discount"
+        },
+        {
+          "id": "12",
+          "name": "discount accepts a valid code"
+        },
+        {
+          "id": "13",
+          "name": "discount picks the better discount"
+        }
+      ],
+      "source": "import { describe, expect, it } from 'vitest';\nimport { applyDiscount, bestDiscount, isValidCode } from './discount';\n\n// Testy celowo pomijają warunki brzegowe (minTotal, ograniczenie procentu),\n// żeby część mutantów przeżyła i pojawiła się w przykładowym raporcie.\ndescribe('discount', () => {\n  const tenPercent = { code: 'SAVE10', percent: 10, minTotal: 50 };\n\n  it('returns total without a discount', () => {\n    expect(applyDiscount(80)).toBe(80);\n  });\n\n  it('applies percentage discount', () => {\n    expect(applyDiscount(80, tenPercent)).toBe(72);\n  });\n\n  it('accepts a valid code', () => {\n    expect(isValidCode('SAVE10')).toBe(true);\n  });\n\n  it('picks the better discount', () => {\n    const twenty = { code: 'SAVE20', percent: 20, minTotal: 50 };\n    expect(bestDiscount(100, [tenPercent, twenty])).toBe(twenty);\n  });\n});\n"
+    },
+    "src/legacy.test.ts": {
+      "tests": [
+        {
+          "id": "14",
+          "name": "legacy formats price in Polish style"
+        }
+      ],
+      "source": "import { describe, expect, it } from 'vitest';\nimport { formatPrice } from './legacy';\n\ndescribe('legacy', () => {\n  it('formats price in Polish style', () => {\n    expect(formatPrice(12.5)).toBe('12,50 zł');\n  });\n});\n"
+    }
+  },
+  "config": {
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "testRunner": "vitest",
+    "mutate": [
+      "src/**/*.ts",
+      "!src/**/*.test.ts"
+    ],
+    "reporters": [
+      "json",
+      "clear-text",
+      "progress"
+    ],
+    "jsonReporter": {
+      "fileName": "../sample-report.json"
+    },
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": null
+    },
+    "timeoutMS": 2000,
+    "allowConsoleColors": true,
+    "checkers": [],
+    "checkerNodeArgs": [],
+    "commandRunner": {
+      "command": "npm test"
+    },
+    "coverageAnalysis": "perTest",
+    "clearTextReporter": {
+      "allowColor": true,
+      "allowEmojis": false,
+      "logTests": true,
+      "maxTestsToLog": 3,
+      "reportTests": true,
+      "reportMutants": true,
+      "reportScoreTable": true,
+      "skipFull": false
+    },
+    "dashboard": {
+      "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+      "reportType": "full"
+    },
+    "dryRunOnly": false,
+    "eventReporter": {
+      "baseDir": "reports/mutation/events"
+    },
+    "ignorePatterns": [],
+    "ignoreStatic": false,
+    "incremental": false,
+    "incrementalFile": "reports/stryker-incremental.json",
+    "force": false,
+    "fileLogLevel": "off",
+    "inPlace": false,
+    "logLevel": "info",
+    "maxConcurrentTestRunners": 9007199254740991,
+    "maxTestRunnerReuse": 0,
+    "mutator": {
+      "plugins": null,
+      "excludedMutations": []
+    },
+    "plugins": [
+      "@stryker-mutator/*"
+    ],
+    "appendPlugins": [],
+    "htmlReporter": {
+      "fileName": "reports/mutation/mutation.html"
+    },
+    "disableTypeChecks": true,
+    "symlinkNodeModules": true,
+    "tempDirName": ".stryker-tmp",
+    "cleanTempDir": true,
+    "testRunnerNodeArgs": [],
+    "timeoutFactor": 1.5,
+    "dryRunTimeoutMinutes": 5,
+    "tsconfigFile": "tsconfig.json",
+    "warnings": true,
+    "disableBail": false,
+    "allowEmpty": false,
+    "ignorers": [],
+    "testFiles": [],
+    "vitest": {
+      "related": true
+    }
+  },
+  "framework": {
+    "name": "StrykerJS",
+    "version": "10.0.0",
+    "branding": {
+      "homepageUrl": "https://stryker-mutator.io",
+      "imageUrl": "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1458 1458' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath fill='none' d='M0 0h1458v1458H0z'/%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h1458v1458H0z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M1458 729c0 402.655-326.345 729-729 729S0 1131.655 0 729C0 326.445 326.345 0 729 0s729 326.345 729 729' fill='%23e74c3c' fill-rule='nonzero'/%3E%3Cpath d='M778.349 1456.15L576.6 1254.401l233-105 85-78.668v-64.332l-257-257-44-187-50-208 251.806-82.793L1076.6 389.401l380.14 379.15c-19.681 367.728-311.914 663.049-678.391 687.599z' fill-opacity='.3'/%3E%3Cpath d='M753.4 329.503c41.79 0 74.579 7.83 97.925 25.444 23.571 18.015 41.69 43.956 55.167 77.097l11.662 28.679 165.733-58.183-14.137-32.13c-26.688-60.655-64.896-108.61-114.191-144.011-49.329-35.423-117.458-54.302-204.859-54.302-50.78 0-95.646 7.376-134.767 21.542-40.093 14.671-74.09 34.79-102.239 60.259-28.84 26.207-50.646 57.06-65.496 92.701-14.718 35.052-22.101 72.538-22.101 112.401 0 72.536 20.667 133.294 61.165 182.704 38.624 47.255 98.346 88.037 179.861 121.291 42.257 17.475 78.715 33.125 109.227 46.994 27.193 12.361 49.294 26.124 66.157 41.751 15.309 14.186 26.497 30.584 33.63 49.258 7.721 20.214 11.16 45.69 11.16 76.402 0 28.021-4.251 51.787-13.591 71.219-8.832 18.374-20.171 33.178-34.523 44.219-14.787 11.374-31.193 19.591-49.393 24.466-19.68 5.359-39.14 7.993-58.69 7.993-29.359 0-54.387-3.407-75.182-10.747-20.112-7.013-37.144-16.144-51.259-27.486-13.618-11.009-24.971-23.766-33.744-38.279-9.64-15.8-17.272-31.924-23.032-48.408l-10.965-31.376-161.669 60.585 10.734 30.124c10.191 28.601 24.197 56.228 42.059 82.748 18.208 27.144 41.322 51.369 69.525 72.745 27.695 21.075 60.904 38.218 99.481 51.041 37.777 12.664 82.004 19.159 132.552 19.159 49.998 0 95.818-8.321 137.611-24.622 42.228-16.471 78.436-38.992 108.835-67.291 30.719-28.597 54.631-62.103 71.834-100.642 17.263-38.56 25.923-79.392 25.923-122.248 0-54.339-8.368-100.37-24.208-138.32-16.29-38.759-38.252-71.661-65.948-98.797-26.965-26.418-58.269-48.835-93.858-67.175-33.655-17.241-69.196-33.11-106.593-47.533-35.934-13.429-65.822-26.601-89.948-39.525-22.153-11.868-40.009-24.21-53.547-37.309-11.429-11.13-19.83-23.678-24.718-37.664-5.413-15.49-7.98-33.423-7.98-53.577 0-40.883 11.293-71.522 37.086-90.539 28.443-20.825 64.985-30.658 109.311-30.658z' fill='%23f1c40f' fill-rule='nonzero'/%3E%3Cpath d='M720 0h18v113h-18zM1458 738v-18h-113v18h113zM720 1345h18v113h-18zM113 738v-18H0v18h113z'/%3E%3C/g%3E%3C/svg%3E"
+    },
+    "dependencies": {
+      "typescript": "7.0.2"
+    }
+  }
+}

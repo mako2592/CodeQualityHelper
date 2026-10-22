@@ -380,25 +380,83 @@ body {
     padding: 16px;
   }
 
-  .file-table {
-    font-size: 0.875rem;
+  /* Na wąskim ekranie każdy wiersz to dwulinijkowa karta:
+     ścieżka i wynik u góry, liczniki z etykietami pod spodem. */
+  .file-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
   }
 
-  .file-table th,
-  .file-table td {
-    padding: 8px 6px;
+  .file-table,
+  .file-table tbody {
+    display: block;
   }
 
-  .file-table thead th {
-    white-space: normal;
-    overflow-wrap: anywhere;
+  .file-table tbody tr {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .file-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .file-table tbody tr > * {
+    border-bottom: none;
+  }
+
+  .file-table tbody th {
+    grid-column: 1 / 4;
+    grid-row: 1;
   }
 
   .file-table__toggle {
-    padding: 8px;
+    padding: 10px 8px 4px 12px;
+  }
+
+  .file-table td.score-cell {
+    grid-column: 4;
+    grid-row: 1;
+    padding: 10px 12px 4px 8px;
+  }
+
+  .file-table td.count {
+    grid-row: 2;
+    padding: 0 8px 10px 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
+
+  .file-table td.count:nth-child(2) {
+    padding-left: 36px;
+  }
+
+  /* Ostatni licznik zajmuje też kolumnę wyniku, żeby druga linia miała pełną szerokość. */
+  .file-table td.count:nth-child(4) {
+    grid-column: 3 / 5;
+  }
+
+  .file-table td.count::before {
+    content: attr(data-label) ' ';
+  }
+
+  .file-table tr.is-open {
+    background: var(--accent-soft);
+  }
+
+  .file-table tr.file-table__details {
+    display: block;
   }
 
   .file-table__details td {
-    padding-left: 16px;
+    display: block;
+    padding: 8px 12px 16px 36px;
   }
 }
