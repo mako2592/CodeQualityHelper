@@ -84,3 +84,39 @@ Przed pierwszym `npm run screenshots` zainstaluj przeglądarkę dla Playwright:
 ```bash
 npx playwright install chromium
 ```
+
+## Jak powstała ta aplikacja
+
+Aplikacja powstała w Claude Code z użyciem [OpenSpec](https://github.com/Fission-AI/OpenSpec) 1.14.3
+(schemat `spec-driven`). Każda zmiana zaczynała się od planu w katalogu `openspec/`, a dopiero potem był kod:
+
+```
+/opsx:explore  -->  /opsx:propose  -->  /opsx:apply  -->  /opsx:archive
+ (rozmowa,           (proposal, specs,   (kod według      (specs do openspec/specs,
+  bez kodu)           design, tasks)      tasks.md)        change do archiwum)
+```
+
+| Change | Co wniósł |
+|---|---|
+| [`stryker-report-viewer`](openspec/changes/archive/2026-10-22-stryker-report-viewer/) | aplikacja, specyfikacje `mutation-report-import` i `mutation-report-dashboard`, 15 zadań |
+| [`sample-report-and-screenshots`](openspec/changes/archive/2026-10-22-sample-report-and-screenshots/) | przykładowy raport, zrzuty ekranu, układ mobilny, 9 zadań |
+
+Użyte komendy (w Claude Code):
+
+```
+/opsx:explore <pomysł>              # rozmowa o zakresie i technologii
+/opsx:propose <nazwa-change>        # proposal, specs, design i tasks w jednym kroku
+/opsx:apply                         # implementacja zadań z tasks.md
+/opsx:archive                       # synchronizacja specyfikacji i przeniesienie do archiwum
+```
+
+**Jak czytać `openspec/`:** zacznij od `openspec/specs/`, gdzie jest opis tego, co aplikacja robi teraz.
+Uzasadnienia są w archiwum: w każdym change czytaj kolejno `proposal.md`, `design.md` i `tasks.md`.
+Z CLI: `openspec list --specs` oraz `openspec show mutation-report-dashboard --type spec`.
+
+Dwie decyzje warte uwagi:
+
+- **`skip_specs`:** change z przykładowym raportem i zrzutami nie zmienia zachowania aplikacji,
+  więc nie ma specyfikacji. OpenSpec pozwala to jawnie zaznaczyć w `.openspec.yaml`.
+- **Vitest 4 w projekcie przykładowym:** niezgodność Strykera z Vitest 5 wyszła dopiero w trakcie
+  `/opsx:apply`. Implementacja została wstrzymana, a decyzja trafiła do `design.md` tego change.
