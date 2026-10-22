@@ -1,0 +1,404 @@
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --text: #1c2129;
+  --muted: #5f6b7a;
+  --border: #dde1e7;
+  --accent: #3b5bdb;
+  --accent-soft: #e8edff;
+
+  --good: #1f7a3d;
+  --good-soft: #e3f4e8;
+  --warning: #8a5a00;
+  --warning-soft: #fdf1d6;
+  --bad: #b42318;
+  --bad-soft: #fde7e5;
+  --neutral-soft: #eceff3;
+
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12151a;
+    --surface: #1b1f26;
+    --text: #e6e9ee;
+    --muted: #9aa4b2;
+    --border: #2e343e;
+    --accent: #8ea6ff;
+    --accent-soft: #232b45;
+
+    --good: #6fd08f;
+    --good-soft: #17301f;
+    --warning: #f2c35b;
+    --warning-soft: #33280f;
+    --bad: #ff8a80;
+    --bad-soft: #3a1917;
+    --neutral-soft: #262b33;
+
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  display: grid;
+  gap: 16px;
+}
+
+.app__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Wczytywanie pliku */
+
+.file-drop {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 40px 16px;
+  text-align: center;
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.file-drop:hover,
+.file-drop:focus-within,
+.file-drop--dragging {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.file-drop--compact {
+  padding: 12px 16px;
+  font-size: 0.875rem;
+}
+
+.file-drop input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert {
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: var(--bad);
+  background: var(--bad-soft);
+  border: 1px solid var(--bad);
+}
+
+.alert__detail {
+  margin-top: 4px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+
+.notice {
+  margin: 0;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Wynik i ocena */
+
+.score {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 2px 8px;
+}
+
+.score__value {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.score__label {
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.score--good .score__value { color: var(--good); }
+.score--good .score__label { color: var(--good); background: var(--good-soft); }
+.score--warning .score__value { color: var(--warning); }
+.score--warning .score__label { color: var(--warning); background: var(--warning-soft); }
+.score--bad .score__value { color: var(--bad); }
+.score--bad .score__label { color: var(--bad); background: var(--bad-soft); }
+.score--none .score__value { color: var(--muted); }
+
+/* Podsumowanie */
+
+.summary {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px 32px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.summary__main .score {
+  justify-content: flex-start;
+}
+
+.summary__main .score__value {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.summary__title {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.summary__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  margin: 0;
+  align-content: center;
+}
+
+.summary__stats dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.summary__stats dd {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.status-counts {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.status-counts .status {
+  padding: 4px 10px;
+  font-size: 0.875rem;
+}
+
+/* Statusy mutantów */
+
+.status {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  background: var(--neutral-soft);
+  white-space: nowrap;
+}
+
+.status--Killed,
+.status--Timeout {
+  color: var(--good);
+  background: var(--good-soft);
+}
+
+.status--Survived,
+.status--NoCoverage {
+  color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.status--CompileError,
+.status--RuntimeError {
+  color: var(--warning);
+  background: var(--warning-soft);
+}
+
+/* Tabela plików */
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.file-table th,
+.file-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.file-table thead th {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.file-table tbody tr:last-child > * {
+  border-bottom: none;
+}
+
+.file-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.file-table tbody th {
+  font-weight: 400;
+  padding: 0;
+}
+
+.file-table__toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.file-table__toggle:hover {
+  color: var(--accent);
+}
+
+.file-table__toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.file-table__chevron {
+  color: var(--muted);
+  width: 1em;
+  flex-shrink: 0;
+}
+
+.file-table tr.is-open > * {
+  background: var(--accent-soft);
+}
+
+.file-table__details td {
+  padding: 8px 12px 16px 36px;
+}
+
+/* Lista przeżywających mutantów */
+
+.survivors {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.survivors li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.survivors__location {
+  min-width: 4.5em;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  color: var(--muted);
+}
+
+.survivors__mutator {
+  font-weight: 500;
+}
+
+.survivors__replacement {
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--neutral-soft);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .summary {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .file-table {
+    font-size: 0.875rem;
+  }
+
+  .file-table th,
+  .file-table td {
+    padding: 8px 6px;
+  }
+
+  .file-table thead th {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .file-table__toggle {
+    padding: 8px;
+  }
+
+  .file-table__details td {
+    padding-left: 16px;
+  }
+}

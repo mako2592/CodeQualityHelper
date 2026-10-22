@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "2",
+  "thresholds": { "high": 80, "low": 60, "break": null },
+  "projectRoot": "/home/dev/sample",
+  "files": {
+    "src/calc.ts": {
+      "language": "typescript",
+      "source": "export function add(a: number, b: number) {\n  return a + b;\n}\n",
+      "mutants": [
+        { "id": "1", "mutatorName": "ArithmeticOperator", "replacement": "a - b", "status": "Survived", "location": { "start": { "line": 12, "column": 5 }, "end": { "line": 12, "column": 10 } }, "coveredBy": ["t1"], "killedBy": [] },
+        { "id": "2", "mutatorName": "BlockStatement", "status": "Survived", "location": { "start": { "line": 3, "column": 44 }, "end": { "line": 5, "column": 2 } } },
+        { "id": "3", "mutatorName": "ConditionalExpression", "replacement": "true", "status": "NoCoverage", "location": { "start": { "line": 3, "column": 7 }, "end": { "line": 3, "column": 12 } } },
+        { "id": "4", "mutatorName": "ArithmeticOperator", "replacement": "a * b", "status": "Killed", "location": { "start": { "line": 20, "column": 3 }, "end": { "line": 20, "column": 8 } }, "killedBy": ["t2"] },
+        { "id": "5", "mutatorName": "EqualityOperator", "replacement": "a <= b", "status": "Killed", "location": { "start": { "line": 21, "column": 3 }, "end": { "line": 21, "column": 9 } } },
+        { "id": "6", "mutatorName": "UpdateOperator", "replacement": "i--", "status": "Timeout", "location": { "start": { "line": 25, "column": 10 }, "end": { "line": 25, "column": 13 } } },
+        { "id": "7", "mutatorName": "StringLiteral", "replacement": "\"\"", "status": "Killed", "location": { "start": { "line": 30, "column": 9 }, "end": { "line": 30, "column": 16 } } },
+        { "id": "8", "mutatorName": "OptionalChaining", "replacement": "a.b", "status": "CompileError", "location": { "start": { "line": 31, "column": 1 }, "end": { "line": 31, "column": 5 } }, "statusReason": "TS2532" }
+      ]
+    },
+    "src/utils.ts": {
+      "language": "typescript",
+      "source": "export const id = <T>(x: T) => x;\n",
+      "mutants": [
+        { "id": "9", "mutatorName": "ArrowFunction", "replacement": "() => undefined", "status": "Killed", "location": { "start": { "line": 1, "column": 18 }, "end": { "line": 1, "column": 33 } } },
+        { "id": "10", "mutatorName": "BooleanLiteral", "replacement": "false", "status": "Killed", "location": { "start": { "line": 4, "column": 10 }, "end": { "line": 4, "column": 14 } } },
+        { "id": "11", "mutatorName": "LogicalOperator", "replacement": "a && b", "status": "Killed", "location": { "start": { "line": 6, "column": 10 }, "end": { "line": 6, "column": 16 } } },
+        { "id": "12", "mutatorName": "MethodExpression", "replacement": "s", "status": "Killed", "location": { "start": { "line": 8, "column": 10 }, "end": { "line": 8, "column": 22 } } }
+      ]
+    },
+    "src/strings.ts": {
+      "language": "typescript",
+      "source": "export const greet = (n: string) => `Hi ${n}`;\n",
+      "mutants": [
+        { "id": "13", "mutatorName": "StringLiteral", "replacement": "``", "status": "Killed", "location": { "start": { "line": 1, "column": 37 }, "end": { "line": 1, "column": 46 } } },
+        { "id": "14", "mutatorName": "Regex", "replacement": "/\\w/", "status": "Killed", "location": { "start": { "line": 3, "column": 15 }, "end": { "line": 3, "column": 21 } } },
+        { "id": "15", "mutatorName": "MethodExpression", "replacement": "s.toLowerCase()", "status": "Survived", "location": { "start": { "line": 5, "column": 10 }, "end": { "line": 5, "column": 25 } } }
+      ]
+    },
+    "src/legacy.ts": {
+      "language": "typescript",
+      "source": "// stryker-disable all\n",
+      "mutants": [
+        { "id": "16", "mutatorName": "BlockStatement", "status": "Ignored", "statusReason": "disabled", "location": { "start": { "line": 2, "column": 1 }, "end": { "line": 4, "column": 2 } } },
+        { "id": "17", "mutatorName": "StringLiteral", "replacement": "\"\"", "status": "Ignored", "location": { "start": { "line": 6, "column": 1 }, "end": { "line": 6, "column": 8 } } }
+      ]
+    }
+  },
+  "testFiles": {
+    "src/calc.test.ts": { "tests": [{ "id": "t1", "name": "adds numbers" }, { "id": "t2", "name": "multiplies" }] }
+  },
+  "performance": { "setup": 1200, "initialRun": 800, "mutation": 5400 },
+  "framework": { "name": "StrykerJS", "version": "9.0.0" },
+  "system": { "ci": false, "os": { "platform": "linux" } }
+}
